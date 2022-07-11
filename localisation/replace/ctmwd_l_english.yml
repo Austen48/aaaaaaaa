@@ -1,0 +1,17 @@
+﻿l_english:
+ trait_ImmLeader: "Immortal Leader"
+ trait_ImmLeader_desc: "Immortal Leader"
+ trait_Synthetic_ImmLeader: "Immortal Leader"
+ trait_Synthetic_ImmLeader_desc: "Immortal Leader"
+ 
+
+
+ mod_planet_pops_food_upkeep_mult:"Pop food upkeep"
+ mod_planet_entertainers_upkeep_mult:"Entertainers and Duelists upkeep"
+ mod_country_base_alloys_produces_add:"Monthly Alloys"
+ 
+ origin_tooltip_mechanists_effects1:0 "Start the game with §Y8§! £pop£ Pops being robots, and with the technology and infrastructure to build more，And other synthetic technology will be easier to have. "
+ civic_tooltip_life_seeded_effects:1 "Homeworld is a §Y$pc_gaia$§! (Size: £planetsize£ §Y25§!) with several §YRare Planetary Features§!\nHabitability preference is set to §Y$trait_pc_gaia_preference$§!, making other types of planets undesirable\n Guaranteed Habitable Worlds will be change into Gaia"
+ civic_tooltip_post_apocalyptic_effects:3 "Capital starts as a §YTomb World§!\nGain the §Y$trait_pc_nuked_preference$§!"
+ origin_tooltip_remnants_effects1:0 "Start with a §YRelic World§! as your homeworld. Reclaim your lost glory! Rebuild city world from relic world will not more need technology, Arcology plan will be available  without tech"
+ origin_tooltip_tree_effects1:0 "Our Hive gains many bonuses from living on a planet with a Tree of Life present, or penalties if it is absent. Colony ships are more expensive, but will provide new planets with their own sapling. It will also make planet more habitable."

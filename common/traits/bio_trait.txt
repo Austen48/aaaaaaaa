@@ -1,0 +1,20 @@
+trait_ImmLeader = {
+	cost = 0
+	potential_crossbreeding_chance = 1.0	# 1.0 = 100% chance of being considered for new traits when forming half-species. does not guarantee the trait will be added if it costs points.
+	allowed_archetypes = { BIOLOGICAL }
+	icon = "gfx/interface/icons/traits/trait_uplifted.dds"
+	immortal_leaders = yes
+	modifier = {
+		leader_age = 8000
+		randomized = no
+		immortal_leaders = yes
+		weight=0
+		species_max_traits = 6
+	}
+	slave_cost = {
+		energy = 50
+	}
+	ai_weight = {
+		weight = 0
+	}
+}

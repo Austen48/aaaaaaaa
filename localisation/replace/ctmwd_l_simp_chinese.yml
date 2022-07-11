@@ -1,0 +1,26 @@
+﻿l_simp_chinese:
+ trait_ImmLeader: "领袖不死"
+ trait_ImmLeader_desc: "点了不死老婆"
+ trait_Synthetic_ImmLeader: "领袖不死"
+ trait_Synthetic_ImmLeader_desc: "点了你老婆不会死"
+ yugc:"    "
+ eeee:"    "
+ 
+ ctm_ascen_admin_buff1:"帝国飞升-1"
+ ctm_ascen_admin_buff2:"帝国飞升-2"
+ ctm_ascen_admin_buff3:"帝国飞升-3"
+ ctm_ascen_admin_buff4:"帝国飞升-4"
+ ctm_ascen_admin_buff5:"帝国飞升-5"
+ ctm_ascen_admin_buff6:"帝国飞升-6"
+ ctm_ascen_admin_buff7:"帝国飞升-7"
+ ctm_ascen_admin_buff8:"帝国飞升-8"
+
+ mod_planet_pops_food_upkeep_mult:"人口食物消耗"
+ mod_planet_entertainers_upkeep_mult:"演艺人员与决斗者维护费"
+ mod_country_base_alloys_produces_add:"每月合金"
+ 
+ origin_tooltip_mechanists_effects1:0 "游戏初始人口包含§Y8§! £pop£ 机器人人口，同时也拥有科技和基础设施来建造更多机器人，并且更容易出现后续的机器人科技"
+ civic_tooltip_life_seeded_effects:1 "母星为§Y$pc_gaia$§!（规模：£planetsize£§Y25§!）拥有数个§Y稀有行星特性§!\n宜居性偏好设置为§Y$trait_pc_gaia_preference$§!，其他类型的行星被列为不受欢迎\n保底宜居星将会被替换为盖亚星球，且无需飞升即可改造盖亚星球"
+ civic_tooltip_post_apocalyptic_effects:3 "游戏初始首都为§Y死寂星球§!\n将会获得死寂星球宜居，对所有可殖民星都具有高适应能力"
+ origin_tooltip_remnants_effects1:0 "游戏开始时以一个§Y遗落星球§!作为你的母星。重拾失落的荣光！\n对遗落星球的重建将不需要前置科技，且可以立即采用理想城飞升"
+ origin_tooltip_tree_effects1:0 "我们蜂巢思维会于生活在具有生命之树的行星上时获得许多增益，否则将受到种种惩罚。殖民船更为昂贵，但将为新的行星提供其自身的幼树。\n同时生命之树也会将星球改造的更加适合居住"

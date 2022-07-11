@@ -1,0 +1,156 @@
+origin_mechanists = {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origins_mechanist.dds"
+	picture = GFX_origin_mechanist
+
+	playable = {
+		host_has_dlc = "Utopia"
+	}
+
+	possible = {
+		ethics = {
+			NOT = { value = ethic_gestalt_consciousness }
+			OR = {
+				text = civic_tooltip_materialist
+				value = ethic_materialist
+				value = ethic_fanatic_materialist
+			}
+		}
+		civics = { NOT = { value = civic_permanent_employment } }
+	}
+
+	modifier = { planet_pops_robotics_upkeep_mult = -0.10 planet_pop_assemblers_upkeep_mult = -0.33}
+
+	description = "origin_tooltip_mechanists_effects1"
+
+	advanced_start = yes
+
+	random_weight = {
+		base = 10
+	}
+}
+
+origin_life_seeded = {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origins_life_seeded.dds"
+	picture = GFX_origin_life_seeded
+
+	starting_colony = pc_gaia
+	habitability_preference = pc_gaia
+
+	playable = {
+		host_has_dlc = "Apocalypse"
+	}
+
+	possible = {
+		authority = { NOT = { value = auth_machine_intelligence } }
+	}
+	
+	modifier = { pop_happiness = 0.2  terraforming_cost_mult =-0.5 terraform_speed_mult = 0.5}
+	
+	description = "civic_tooltip_life_seeded_effects"
+
+	random_weight = {
+		base = 5
+	}
+}
+
+origin_post_apocalyptic = {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origins_post_apocalyptic.dds"
+	picture = GFX_origin_post_apocalyptic
+
+	starting_colony = pc_nuked
+
+	playable = {
+		host_has_dlc = "Apocalypse"
+	}
+
+	possible = {
+		authority = { NOT = { value = auth_machine_intelligence } }
+		civics = {
+			NOT = { value = civic_agrarian_idyll }
+			NOR = {
+				text = civic_tooltip_not_anglers
+				value = civic_anglers
+				value = civic_corporate_anglers
+			}
+		}
+	}
+
+	modifier = {
+		pop_environment_tolerance = 0.2
+	}
+
+	description = "civic_tooltip_post_apocalyptic_effects"
+
+	traits = {
+		trait = trait_survivor
+	}
+
+	advanced_start = yes
+
+	random_weight = {
+		base = 5
+	}
+}
+
+origin_tree_of_life = {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origins_tree_of_life.dds"
+	picture = GFX_origin_tree
+	max_once_global = yes
+
+	playable = {
+		host_has_dlc = "Utopia"
+	}
+
+	possible = {
+		authority = { value = auth_hive_mind }
+	}
+
+	description = "origin_tooltip_tree_effects1"
+	flags = { custom_start_screen }
+
+	advanced_start = yes
+
+	random_weight = {
+		base = 5
+	}
+}
+
+origin_remnants = {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origins_remnant.dds"
+	picture = GFX_origin_remnants
+
+	starting_colony = pc_relic #Changes homeworld class regardless of what is picked for empire
+	max_once_global = yes
+
+	playable = {
+		OR = {
+			has_ancrel = yes
+			host_has_dlc = Federations
+		}
+	}
+
+	possible = {
+		civics = {
+			NOT = { value = civic_agrarian_idyll }
+		}
+	}
+
+	description = "origin_tooltip_remnants_effects"
+
+	flags = { custom_start_screen first_contact_event Story7 }
+
+	traits = {
+
+	}
+
+	advanced_start = yes
+
+	random_weight = {
+		base = 5
+	}
+}

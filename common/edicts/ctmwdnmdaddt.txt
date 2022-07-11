@@ -1,0 +1,393 @@
+
+ctm_occ22= {
+	length = 0
+	resources = {
+		category = edicts
+		cost = {
+			influence = 0
+		}
+	}
+	potential = {
+		is_multiplayer = yes
+		has_country_flag = allow_to_use_ctm
+		has_country_flag = ctm_decision_enabled
+	}
+
+	effect = {
+		remove_country_flag = ctm_decision_enabled
+	}
+
+	ai_weight = {
+		weight = 0
+	}	
+}
+ctm_pop_growth= {
+	length = 0
+	resources = {
+		category = edicts
+		cost = {
+			influence = 0
+		}
+	}
+	potential = {
+		is_multiplayer = yes
+		has_country_flag = allow_to_use_ctm
+		has_country_flag = ctm_decision_enabled
+	}
+
+	effect = {
+		capital_scope = {
+			while = {
+				count = 20
+				create_pop = {
+					species = root
+				}
+			}
+		}
+	}
+	
+
+	ai_weight = {
+		weight = 0
+	}	
+}
+ctm_army_boost= {
+	length = 0
+	resources = {
+		category = edicts
+		cost = {
+			influence = 0
+		}
+	}
+	potential = {
+		is_multiplayer = yes
+		has_country_flag = allow_to_use_ctm
+		has_country_flag = ctm_decision_enabled
+		NOT = {
+			has_modifier = error_army
+		}
+	}
+	
+	effect = {
+		hidden_effect = {
+			add_modifier = {
+				modifier = error_army
+				months = 1
+			}
+		}
+	}
+	
+
+	ai_weight = {
+		weight = 0
+	}	
+}
+
+ctm_wdnmd_ships_battle= {
+	length = 0
+	resources = {
+		category = edicts
+		cost = {
+			influence = 0
+		}
+	}
+	potential = {
+		is_multiplayer = yes
+		has_country_flag = allow_to_use_ctm
+		has_country_flag = ctm_decision_enabled
+		NOT = {
+			has_modifier = error_navy
+		}
+	}
+
+	effect = {
+		hidden_effect = {
+			add_modifier = {
+				modifier = error_navy
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 0
+	}	
+}
+ctm_wdnmd_ships_battlecan = {
+	length = 0
+	resources = {
+		category = edicts
+		cost = {
+			influence = 0
+		}
+	}
+	potential = {
+		is_multiplayer = yes
+		has_country_flag = allow_to_use_ctm
+		has_country_flag = ctm_decision_enabled
+		has_modifier = error_navy
+	}
+
+	effect = {
+		hidden_effect = {
+			remove_modifier = error_navy
+		}
+	}
+	
+	ai_weight = {
+		weight = 0
+	}	
+}
+ctm_wdnmd_ships_upkeep= {
+	length = -1
+	resources = {
+		category = edicts
+		cost = {
+			influence = 0
+		}
+	}
+	potential = {
+		is_multiplayer = yes
+		has_country_flag = allow_to_use_ctm
+		has_country_flag = ctm_decision_enabled
+		NOT = {
+			has_modifier = error_upkeep
+		}
+	}
+
+	effect = {
+		hidden_effect = {
+			add_modifier = {
+				modifier = error_upkeep
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 0
+	}	
+}
+ctm_wdnmd_ships_upkeepcan= {
+	length = -1
+	resources = {
+		category = edicts
+		cost = {
+			influence = 0
+		}
+	}
+	potential = {
+		is_multiplayer = yes
+		has_country_flag = allow_to_use_ctm
+		has_country_flag = ctm_decision_enabled
+			has_modifier = error_upkeep
+	}
+
+	effect = {
+		hidden_effect = {
+			remove_modifier = error_upkeep
+		}
+	}
+	
+	ai_weight = {
+		weight = 0
+	}	
+}
+ctm_wdnmd_ships_cost= {
+	length = -1
+	resources = {
+		category = edicts
+		cost = {
+			influence = 0
+		}
+	}
+	potential = {
+		is_multiplayer = yes
+		has_country_flag = allow_to_use_ctm
+		has_country_flag = ctm_decision_enabled
+	}
+
+	modifier = {
+		starbase_shipyard_build_cost_mult = -1.0
+	}
+	
+	ai_weight = {
+		weight = 0
+	}	
+}
+
+ctm_wdnmd_builder= {
+	length = 0
+	resources = {
+		category = edicts
+		cost = {
+			influence = 0
+		}
+	}
+	potential = {
+		is_multiplayer = yes
+		has_country_flag = allow_to_use_ctm
+		has_country_flag = ctm_decision_enabled
+		NOT = {
+			has_modifier = error_building
+		}
+	}
+
+	effect = {
+		hidden_effect = {
+			add_modifier = {
+				modifier = error_building
+			}
+		}
+	}
+	
+
+	ai_weight = {
+		weight = 0
+	}	
+}
+ctm_wdnmd_buildercab= {
+	length = 0
+	resources = {
+		category = edicts
+		cost = {
+			influence = 0
+		}
+	}
+	potential = {
+		is_multiplayer = yes
+		has_country_flag = allow_to_use_ctm
+		has_country_flag = ctm_decision_enabled
+		has_modifier = error_building
+	}
+
+	effect = {
+		hidden_effect = {
+			remove_modifier = error_building
+		}
+	}
+	
+
+	ai_weight = {
+		weight = 0
+	}	
+}
+
+
+ctm_wdnmd_godlike= {
+	length = -1
+	resources = {
+		category = edicts
+		cost = {
+			influence = 0
+		}
+	}
+	potential = {
+		is_multiplayer = yes
+		has_country_flag = allow_to_use_ctm
+		has_country_flag = ctm_decision_enabled
+	}
+
+	modifier = {
+		all_technology_research_speed = 100
+	}
+	
+
+	ai_weight = {
+		weight = 0
+	}	
+}
+
+
+ctm_game_start_bonus= {
+	length = 0
+	resources = {
+		category = edicts
+		cost = {
+			influence = 0
+		}
+	}
+	potential = {
+		is_multiplayer = yes
+		is_ai = no
+		has_country_flag = allow_to_use_ctm
+		has_country_flag = ctm_decision_enabled
+		NOT = {
+			has_modifier = error_bonus
+		}
+	}
+
+	effect = {
+		hidden_effect = {
+			add_modifier = {
+				modifier = error_bonus
+			}
+		}
+	}
+
+	ai_weight = {
+		weight = 0
+	}	
+}
+ctm_game_start_bonuscan= {
+	length = 0
+	resources = {
+		category = edicts
+		cost = {
+			influence = 0
+		}
+	}
+	potential = {
+		is_multiplayer = yes
+		is_ai = no
+		has_country_flag = allow_to_use_ctm
+		has_country_flag = ctm_decision_enabled
+		has_modifier = error_bonus
+	}
+
+	effect = {
+		hidden_effect = {
+			remove_modifier = error_bonus
+		}
+	}
+
+	ai_weight = {
+		weight = 0
+	}	
+}
+
+
+ctm_wdnmd_final_strategy_tech= {
+	length = 0
+	resources = {
+		category = edicts
+		cost = {
+			influence = 0
+		}
+	}
+	potential = {
+		is_multiplayer = yes
+		has_country_flag = allow_to_use_ctm
+		has_country_flag = ctm_decision_enabled
+	}
+
+	effect = {
+		give_technology = { tech = tech_repeatable_weapon_type_energy_fire_rate message = no }
+		give_technology = { tech = tech_repeatable_weapon_type_energy_fire_rate message = no }
+		give_technology = { tech = tech_repeatable_weapon_type_energy_fire_rate message = no }
+		give_technology = { tech = tech_repeatable_weapon_type_energy_fire_rate message = no }
+		give_technology = { tech = tech_repeatable_weapon_type_energy_fire_rate message = no }
+		give_technology = { tech = tech_repeatable_weapon_type_energy_damage message = no }
+		give_technology = { tech = tech_repeatable_weapon_type_energy_damage message = no }
+		give_technology = { tech = tech_repeatable_weapon_type_energy_damage message = no }
+		give_technology = { tech = tech_repeatable_weapon_type_energy_damage message = no }
+		give_technology = { tech = tech_repeatable_weapon_type_energy_damage message = no }
+		give_technology = { tech = tech_repeatable_improved_shield_output message = no }
+		give_technology = { tech = tech_repeatable_improved_shield_output message = no }
+		give_technology = { tech = tech_repeatable_improved_shield_output message = no }
+		give_technology = { tech = tech_repeatable_improved_shield_output message = no }
+		give_technology = { tech = tech_repeatable_improved_shield_output message = no }
+	}
+
+	ai_weight = {
+		weight = 0
+	}	
+}

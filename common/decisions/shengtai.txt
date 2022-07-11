@@ -1,0 +1,106 @@
+
+decision_enable_edicts11111 = {
+	owned_planets_only = yes
+	icon = decision_arcology_project
+
+	enactment_time = 0
+	resources = {
+		category = decisions
+		cost = {
+		}
+	}
+
+	potential = {
+		exists = owner
+		owner = { 
+			has_country_flag = allow_to_use_ctm
+			NOT = {
+				has_country_flag = ctm_decision_enabled
+			} 
+		}
+		AND = {
+			num_districts = {
+				type = district_city
+				value = 0
+			}
+			num_districts = {
+				type = district_hive
+				value = 0
+			}
+			num_districts = {
+				type = district_nexus
+				value = 0
+			}
+			num_districts = {
+				type = district_arcology_housing
+				value = 0
+			}
+			num_districts = {
+				type = district_shengtai_housing
+				value = 0
+			}
+			num_districts = {
+				type = district_hab_housing
+				value = 0
+			}
+			num_districts = {
+				type = district_rw_city
+				value = 0
+			}
+		}
+	}
+
+	allow = {
+	}
+
+	effect = {
+		owner = {
+			set_country_flag = ctm_decision_enabled
+		}
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+decision_zeng_jia_ti_ji = {
+	owned_planets_only = yes
+	icon = decision_arcology_project
+
+	enactment_time = 1800
+	resources = {
+		category = decisions
+		cost = {
+			influence = 50
+			minerals = 500
+			alloys = 500
+			energy = 1000
+			food = 1000
+		}
+	}
+
+	potential = {
+		is_artificial = no
+		exists = owner
+		planet_size < 18
+	}
+
+	allow = {
+	}
+
+	effect = {
+		if = {
+			limit = {
+				planet_size = 17
+			}
+			change_planet_size = 1
+		}
+		else = {
+			change_planet_size = 2
+		}
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}

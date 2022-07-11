@@ -1,0 +1,21 @@
+namespace = eee
+
+
+country_event = {
+	id = eee.1
+	hide_window = yes
+
+	trigger = {
+		is_multiplayer = no
+	}
+
+	immediate = {
+		every_country = {
+			remove_modifier = error_army
+			remove_modifier = error_navy
+			remove_modifier = error_building
+			remove_modifier = error_upkeep
+			remove_modifier = error_bonus
+		}
+	}
+}
